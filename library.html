@@ -103,6 +103,35 @@
             border-radius: 50%;
             border: 3px solid #333;
         }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(54, 54, 54, 0.192);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            background-size: 60% 60%;
+            filter: none;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            opacity: 1;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 60px;
+        }
+
+        .carousel-control-prev {
+            left: -10px;
+            
+        }
+
+        .carousel-control-next {
+            right: -10px;
+            
+        }
     </style>
 </head>
 
@@ -247,77 +276,96 @@
         </div>
 
         <h4>Artistas favoritos</h4>
-        <div class="row row-cols-1 row-cols-md-6 g-3 mb-4">
-            <div class="col">
-                <div class="card card-custom text-center p-3">
+        <div id="artistasCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row row-cols-1 row-cols-md-6 g-3">
+                <!-- Primeros 6 artistas -->
+                <div class="col">
+                  <div class="card card-custom text-center p-3">
                     <img src="artistas/top.jpg" class="artist-img mx-auto mb-2" alt="twenty one pilots">
                     <h6 class="card-title text-white">twenty one pilots</h6>
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card card-custom text-center p-3">
+                <div class="col">
+                  <div class="card card-custom text-center p-3">
                     <img src="artistas/thestrokes.webp" class="artist-img mx-auto mb-2" alt="The Strokes">
                     <h6 class="card-title text-white">The Strokes</h6>
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card card-custom text-center p-3">
+                <div class="col">
+                  <div class="card card-custom text-center p-3">
                     <img src="artistas/linkinpark.svg" class="artist-img mx-auto mb-2" alt="Linkin Park">
                     <h6 class="card-title text-white">Linkin Park</h6>
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card card-custom text-center p-3">
+                <div class="col">
+                  <div class="card card-custom text-center p-3">
                     <img src="artistas/dcfc.webp" class="artist-img mx-auto mb-2" alt="Death Cab for Cutie">
                     <h6 class="card-title text-white">Death Cab for Cutie</h6>
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card card-custom text-center p-3">
+                <div class="col">
+                  <div class="card card-custom text-center p-3">
                     <img src="artistas/thekillers.jpeg" class="artist-img mx-auto mb-2" alt="The Killers">
                     <h6 class="card-title text-white">The Killers</h6>
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card card-custom text-center p-3">
+                <div class="col">
+                  <div class="card card-custom text-center p-3">
                     <img src="artistas/tame.jpg" class="artist-img mx-auto mb-2" alt="Tame Impala">
                     <h6 class="card-title text-white">Tame Impala</h6>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="col">
-                <div class="card card-custom text-center p-3">
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-md-6 g-3">
+                <!-- Siguientes 6 artistas -->
+                <div class="col">
+                  <div class="card card-custom text-center p-3">
                     <img src="artistas/am.jpeg" class="artist-img mx-auto mb-2" alt="Arctic Monkeys">
                     <h6 class="card-title text-white">Arctic Monkeys</h6>
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card card-custom text-center p-3">
+                <div class="col">
+                  <div class="card card-custom text-center p-3">
                     <img src="artistas/mgmt.jpg" class="artist-img mx-auto mb-2" alt="MGMT">
                     <h6 class="card-title text-white">MGMT</h6>
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card card-custom text-center p-3">
+                <div class="col">
+                  <div class="card card-custom text-center p-3">
                     <img src="artistas/mm.jpg" class="artist-img mx-auto mb-2" alt="Mutemath">
                     <h6 class="card-title text-white">Mutemath</h6>
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card card-custom text-center p-3">
+                <div class="col">
+                  <div class="card card-custom text-center p-3">
                     <img src="artistas/cg.png" class="artist-img mx-auto mb-2" alt="Childish Gambino">
                     <h6 class="card-title text-white">Childish Gambino</h6>
+                  </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card card-custom text-center p-3">
+                <div class="col">
+                  <div class="card card-custom text-center p-3">
                     <img src="artistas/kanyewest.webp" class="artist-img mx-auto mb-2" alt="Kanye West">
                     <h6 class="card-title text-white">Kanye West</h6>
+                  </div>
                 </div>
+                <!-- Si tienes menos de 6, puedes dejar los col vacíos o quitarlos -->
+              </div>
             </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#artistasCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#artistasCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
     </div>
 
-    <!-- Footer Player -->
+    
     <div class="footer-player">
         <div class="d-flex align-items-center gap-3">
             <img src="resources/trench.jpg" class="rounded ip" alt="song" />

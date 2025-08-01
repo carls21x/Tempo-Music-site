@@ -2,7 +2,7 @@
     // Canciones del álbum Trench
     const trenchSongs = [
         { title: "Jumpsuit", src: "", duration: "3:58" },
-        { title: "Levitate", src: "albumes/Trench/twenty one pilots - Levitate.flac", duration: "2:25" },
+        { title: "Levitate", src: "albumes/Trench/twenty one pilots - Levitate.mp3", duration: "2:25" },
         { title: "Morph", src: "audio/morph.mp3", duration: "4:18" },
         { title: "My Blood", src: "audio/myblood.mp3", duration: "3:49" },
         { title: "Chlorine", src: "audio/chlorine.mp3", duration: "5:24" },

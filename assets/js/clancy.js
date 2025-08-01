@@ -4,7 +4,7 @@ const clancySongs = [
             { title: "Backslide", src: "albumes/Clancy/03. Backslide.wav", duration: "3:00" },
             { title: "Midwest Indigo", src: "albumes/Clancy/04. Midwest Indigo.wav", duration: "3:16" },
             { title: "Routines In The Night", src: "albumes/Clancy/05. Routines In The Night.wav", duration: "3:22" },
-            { title: "Vignette", src: "albumes/Clancy/06. Vignette.wav", duration: "3:22" },
+            { title: "Vignette", src: "albumes/Clancy/Twenty One Pilots - Vignette.mp3", duration: "3:22" },
             { title: "The Craving (Jenna's Version)", src: "albumes/Clancy/07. The Craving (Jenna's version).wav", duration: "2:54" },
             { title: "Lavish", src: "albumes/Clancy/08. Lavish.wav", duration: "2:38" },
             { title: "Navigating", src: "albumes/Clancy/09. Navigating.wav", duration: "3:43" },
